@@ -32,17 +32,16 @@
     max-width: 1200px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .popular {
-        gap: 0;
+        padding: 30px 16px;
     }
+
     .popular h1 {
-        font-size: 28px;
+        font-size: 24px;
     }
+
     .popular-items {
-        width: 150%;
-        max-width: 200px;
-        margin-right: 30%;
-        display: grid;
+        gap: 16px;
     }
 }

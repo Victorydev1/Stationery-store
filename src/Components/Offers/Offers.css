@@ -65,17 +65,35 @@
 }
 
 @media (max-width: 768px) {
-    .offers {
-        padding-left: 15px;
-    }
-    .offers-left h1 {
-        font-size: 35px;
-        gap: 10px;
-    }
-    .offers-right img {
-        position: absolute;
-        margin-right: 15%;
-        max-width: 80%;
-        height: 50%;
-    }
+  .offers {
+    flex-direction: column; 
+    padding: 30px 20px;
+    margin: 60px auto;
+    text-align: center;
+  }
+
+  .offers-left h1 {
+    font-size: 32px;
+  }
+
+  .offers-left p {
+    font-size: 16px;
+  }
+
+  .offers-left button {
+    padding: 14px 28px;
+    font-size: 15px;
+  }
+
+  .offers-right {
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .offers-right img {
+    max-width: 80%;
+    height: auto;
+    position: static;
+    margin: 0 auto;
+  }
 }

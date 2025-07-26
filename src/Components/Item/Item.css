@@ -58,8 +58,31 @@
 
 @media (max-width: 768px) {
     .item {
-         width: 150%;
-    max-width: 300px;
-    padding: 10px;
+        max-width: 100%;
+        padding: 12px;
+    }
+
+    .item-name {
+        font-size: 16px;
+    }
+
+    .item-price-new,
+    .item-price-old {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .item {
+        padding: 8px;
+    }
+
+    .item-name {
+        font-size: 15px;
+    }
+
+    .item-price-new,
+    .item-price-old {
+        font-size: 13px;
     }
 }

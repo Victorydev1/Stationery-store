@@ -34,3 +34,26 @@
     padding: 48px;
     padding-bottom: 70px;
 }
+
+@media screen and (max-width: 768px) {
+  .descriptionbox {
+    margin: 80px 30px;
+  }
+
+  .descriptionbox-navigator {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .descriptionbox-nav-box,
+  .descriptionbox-nav-box-fade {
+    width: 100%;
+    height: 60px;
+    font-size: 15px;
+  }
+
+  .descriptionbox-description {
+    padding: 30px;
+    gap: 20px;
+  }
+}

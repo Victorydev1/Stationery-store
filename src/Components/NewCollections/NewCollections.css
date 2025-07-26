@@ -36,27 +36,31 @@
 }
 
 @media (max-width: 768px) {
-    .new-collections {
-        gap: 0;
-    }
-    .new-collections h1 {
-        font-size: 28px;
-    }
-    .collections {
-        width: 150%;
-        max-width: 280px;
-        margin-right: 30%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+  .new-collections {
+    padding: 16px;
+    gap: 10px;
+  }
+
+  .new-collections h1 {
+    font-size: 32px;
+  }
+
+  .collections {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 480px) {
-    .collections {
-        width: 150%;
-        max-width: 200px;
-        margin-right: 30%;
-        display: grid;
-        grid-template-columns: 1fr;
-    }
+  .new-collections h1 {
+    font-size: 26px;
+  }
+
+  .collections {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
 }

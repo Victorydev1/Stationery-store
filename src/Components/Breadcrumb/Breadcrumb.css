@@ -8,3 +8,20 @@
     margin: 60px 170px;
     text-transform: capitalize;
 }
+
+@media screen and (max-width: 768px) {
+  .breadcrumb {
+    margin: 40px 30px;
+    font-size: 14px;
+    gap: 6px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .breadcrumb {
+    margin: 30px 16px;
+    font-size: 13px;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+}

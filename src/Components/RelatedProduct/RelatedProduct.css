@@ -45,3 +45,22 @@
     text-align: center;
     margin-top: 40px;
 }
+
+@media (max-width: 768px) {
+  .relatedproducts {
+    padding: 30px 16px;
+    gap: 16px;
+  }
+
+  .relatedproducts h1 {
+    font-size: 30px;
+  }
+
+  .relatedproducts p {
+    font-size: 15px;
+  }
+
+  .relatedproducts-item {
+    gap: 20px;
+  }
+}

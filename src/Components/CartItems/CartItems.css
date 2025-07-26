@@ -1,93 +1,174 @@
-.cartitems{
-    margin: 100px 170px;
+.cartitems {
+  margin: 100px 170px;
 }
-.cartitems hr{
-    height: 3px;
-    background: #e2e2e2;
-    border: 0;
+.cartitems hr {
+  height: 3px;
+  background: #e2e2e2;
+  border: 0;
 }
-.cartitems-format-main{
-    display: grid;
-    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
-    align-items: center;
-    gap: 50px;
-    padding: 10px 0px;
-    color: #454545;
-    font-size: 18px;
-    font-weight: 600;
+.cartitems-format-main {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+  padding: 10px 0px;
+  color: #454545;
+  font-size: 18px;
+  font-weight: 600;
 }
-.cartitems-format{
-    font-size: 27px;
-    font-weight: 500;
+.cartitems-format {
+  font-size: 27px;
+  font-weight: 500;
 }
-.cartitem-product-icon{
-    height: 62px;
+.cartitem-product-icon {
+  height: 62px;
 }
-.cartitems-remove-icon{
-    width: 15px;
-    margin: 0px 40px;
-    cursor: pointer;
+.cartitems-remove-icon {
+  width: 15px;
+  margin: 0px 40px;
+  cursor: pointer;
 }
-.cartitems-quantity{
-    width: 64px;
-    height: 50px;
-    border: 2px;
-    background: #fff;
+.cartitems-quantity {
+  width: 64px;
+  height: 50px;
+  border: 2px;
+  background: #fff;
 }
-.cartitems-total{
-    flex: 1;
-    flex-direction: column;
-    margin-right: 500px;
-    gap: 10px;
+.cartitems-total {
+  flex: 1;
+  flex-direction: column;
+  margin-right: 500px;
+  gap: 10px;
 }
-.cartitems-total-item{
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 0px;
+.cartitems-total-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 0px;
 }
 .cartitems-down {
-    display: flex;
+  display: flex;
 }
 .cartitems-down button {
-    width: 262px;
-    height: 58px;
-    outline: none;
-    border: none;
-    background: #ff5a5a;
-    color: white;
+  width: 262px;
+  height: 58px;
+  outline: none;
+  border: none;
+  background: #ff5a5a;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cartitems-promocode {
+  flex: 1;
+  font-size: 20px;
+  font-weight: 500;
+}
+.cartitems-promocode p {
+  color: #555;
+}
+.cartitems-promobox {
+  width: 504px;
+  margin-top: 15px;
+  padding-left: 50px;
+  height: 58px;
+  background: #eaeaea;
+}
+.cartitems-promobox input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 20px;
+  width: 330px;
+  height: 50px;
+}
+.cartitems-promobox button {
+  width: 124px;
+  height: 58px;
+  font-size: 20px;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* Tablet View - Screens smaller than 1024px */
+@media screen and (max-width: 1024px) {
+  .cartitems {
+    margin: 60px 40px;
+  }
+
+  .cartitems-format-main {
+    grid-template-columns: 1fr 2fr 1fr;
     font-size: 16px;
-    font-weight: 600;
-    border-radius: 5px;
-    cursor: pointer;
+    gap: 20px;
+  }
+
+  .cartitems-total {
+    margin-right: 100px;
+  }
+
+  .cartitems-promobox {
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  .cartitems-promobox input {
+    width: 60%;
+  }
+
+  .cartitems-promobox button {
+    width: 35%;
+  }
 }
-.cartitems-promocode{
-    flex: 1;
+
+/* Mobile View - Screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .cartitems {
+    margin: 30px 20px;
+  }
+
+  .cartitems-format-main {
+    grid-template-columns: 1fr 1fr;
+    font-size: 14px;
+    gap: 10px;
+  }
+
+  .cartitems-format {
     font-size: 20px;
-    font-weight: 500;
-}
-.cartitems-promocode p{
-    color: #555;
-}
-.cartitems-promobox{
-    width: 504px;
-    margin-top: 15px;
-    padding-left: 50px;
-    height: 58px;
-    background: #eaeaea;
-}
- .cartitems-promobox input{
-    border: none;
-    outline: none;
-    background: transparent;
-    font-size: 20px;
-    width: 330px;
-    height: 50px;
-}
-.cartitems-promobox button{
-    width: 124px;
-    height: 58px;
-    font-size: 20px;
-    background: black;
-    color: white;
-    cursor: pointer;
+  }
+
+  .cartitem-product-icon {
+    height: 40px;
+  }
+
+  .cartitems-remove-icon {
+    margin: 0px 10px;
+  }
+
+  .cartitems-quantity {
+    width: 50px;
+    height: 40px;
+  }
+
+  .cartitems-down {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cartitems-down button {
+    width: 100%;
+  }
+
+  .cartitems-promobox {
+    flex-direction: column;
+    height: auto;
+    padding-left: 10px;
+  }
+
+  .cartitems-promobox input,
+  .cartitems-promobox button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
