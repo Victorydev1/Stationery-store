@@ -1,43 +1,93 @@
-.hero{
-    background: linear-gradient(135deg, #4A90E2, #8E44AD);
+.hero {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: #f5f7fa;
+    padding: 60px 5%;
+    gap: 40px;
 }
-.hero-left{
-    flex: 5;
+
+.hero-left {
+    flex: 1 1 500px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    padding-left: 180px;
-    line-height: 1.1;
+    gap: 20px;
+    color: #2f2f2f;
 }
-.hero-left h2{
-    color: #090909;
-    font-size: 26px;
+
+.hero-heading {
+    font-size: 40px;
+    font-weight: 700;
+    color: #3d5afe;
+}
+
+.hero-text p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #4a4a4a;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.highlight {
+    font-size: 18px;
     font-weight: 600;
+    color: #ff6f61;
+    margin-bottom: 100px;
 }
-.hero-left p{
-    color: #171717;
-    font-size: 50px;
-    font-weight: 500;
-}
-.hero-latest-btn{
-    display: flex;
-    justify-content: center;
+
+.hero-btn {
+    display: inline-flex;
     align-items: center;
-    gap: 15px;
-    width: 310px;
-    height: 70px;
-    margin-top: 25px;
-    border-radius: 75px;
-    background: #ff4141;
+    background-color: #ff6f61;
     color: white;
-    font-size: 22px;
-    font-weight: 500;
+    padding: 16px 28px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    gap: 12px;
+    width: fit-content;
+    box-shadow: 0 8px 16px rgba(255, 111, 97, 0.2);
 }
-.hero-right{
-    flex: 1;
+
+.hero-btn:hover {
+    background-color: #e96055;
+}
+
+.hero-right {
+    flex: 1 1 400px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+}
+
+.hero-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+    .hero-heading {
+        font-size: 13px;
+        margin: 0;
+    }
+    .hero-text p {
+        font-size: 10px;
+    }
+    .hero-btn {
+        font-size: 10px;
+        padding: 10px 20px;
+        margin-top: 5px;
+    }
+    .hero-right img {
+        max-width: 50%;
+        position: absolute;
+        margin-left: 45%;
+        margin-bottom: 60%;
+    }
 }

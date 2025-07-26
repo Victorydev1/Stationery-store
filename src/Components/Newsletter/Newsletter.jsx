@@ -1,17 +1,23 @@
-import React from 'react'
-import './Newsletter.css'
+import React from 'react';
+import './Newsletter.css';
+import { motion } from 'framer-motion';
 
 const Newsletter = () => {
   return (
-    <div className="newsletter">
-        <h1>Get Exclusive Offers in Your Email</h1>
-        <p>Subscribe to our newsletter and stay updated</p>
-        <div>
-        <input type="email" placeholder='Your Email Address' />
+    <motion.div 
+      className="newsletter"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
+      <h1>Exclusive Offers, Right to Your Inbox</h1>
+      <p>Stay updated with our latest stationery collections, offers, and more!</p>
+      <div className="newsletter-input-container">
+        <input type="email" placeholder="Your Email Address" />
         <button>Subscribe</button>
-        </div>
-    </div>
-  )
-}
+      </div>
+    </motion.div>
+  );
+};
 
-export default Newsletter
+export default Newsletter;

@@ -1,50 +1,99 @@
-.newsletter{
-    width: 65%;
+.newsletter {
+    width: 80%;
+    max-width: 1000px;
     height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: auto;
-    padding: 0px 140px;
-    margin-bottom: 150px;
-    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
-    gap: 30px;
+    padding: 0 40px;
+    margin-bottom: 100px;
+    background: linear-gradient(145deg, #f8f9fa, #e0e0e0);
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+    transition: all 0.3s ease-in-out;
 }
-.newsletter h1{
-    color: #454545;
-    font-size: 55px;
-    font-weight: 600;
+
+.newsletter:hover {
+    transform: scale(1.02);
 }
-.newsletter p{
-    color: #454545;
-    font-size: 20px;
+
+.newsletter h1 {
+    color: #333;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
 }
-.newsletter div{
+
+.newsletter p {
+    color: #616161;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.newsletter-input-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background: white;
-    width: 730px;
-    height: 70px;
-    border-radius: 80px;
-    border: 1px solid #e3e3e3;
+    width: 100%;
+    max-width: 800px;
+    height: 60px;
+    border-radius: 50px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
-.newsletter input{
-    width: 500px;
-    margin-left: 30px;
+
+.newsletter input {
+    width: 80%;
+    padding: 0 20px;
     border: none;
     outline: none;
     color: #616161;
-    font-family: Arial;
     font-size: 16px;
+    border-radius: 50px;
+    font-family: 'Arial', sans-serif;
 }
-.newsletter button{
-    width: 210px;
-    height: 70px;
-    border-radius: 80px;
-    background: black;
+
+.newsletter input::placeholder {
+    color: #aaa;
+}
+
+.newsletter button {
+    width: 20%;
+    height: 100%;
+    background: #1a73e8;
     color: white;
     font-size: 16px;
+    border: none;
+    border-radius: 50px;
     cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.newsletter button:hover {
+    background: #0d5baf;
+}
+
+@media (max-width: 768px) {
+    .newsletter {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .newsletter h1 {
+        font-size: 30px;
+    }
+
+    .newsletter input {
+        width: 75%;
+    }
+
+    .newsletter button {
+        width: 25%;
+    }
 }
